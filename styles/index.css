@@ -1,0 +1,48 @@
+.device{
+			  height:576px;
+			  width:350px;
+			  border:16px solid black;
+			  border-radius:50px;
+			/*   border-bottom-height:40px; */
+			  border-bottom-width:40px;
+			/*   border-top-height:40px; */
+			  border-top-width:40px;;
+			  position:relative;
+			  left:500px;
+			}
+		.device .inner{
+			/*   border:none; */ */
+			  width:100%;
+			  height:100%;
+			  background-color:white;
+			}
+		iframe{
+			  border:none;
+			  height:100%;
+			  width:100%;
+			  
+			}
+		.device::before{
+			  content:"";
+			  height:5px;
+			  width:50px;
+			/*   transform:translate(-50%,-50%) */
+			  background-color:red;
+			  position:absolute;
+			  left:150px;
+			  top:-20px;
+			  border-radius:10px;
+			/*    display:block; */
+			} 
+
+		.device::after{
+			  content:"";
+			  height:25px;
+			  width:60px;
+			  background-color:red;
+			  position:absolute;
+			  top:583px;
+			  right:150px;
+			  border-radius:20px;
+			/*   border-radius:0px; */
+			}
